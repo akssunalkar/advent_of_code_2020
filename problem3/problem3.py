@@ -16,7 +16,7 @@ def get_tree_count(right_steps, down_steps):
 
 # Part 1
 num_trees = get_tree_count(3, 1)
-
+print(num_trees)
 
 # Part 2
 slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
@@ -24,3 +24,5 @@ all_n_trees = 1
 for s in slopes:
     n = get_tree_count(*s)
     all_n_trees = all_n_trees * n
+
+print(all_n_trees)
